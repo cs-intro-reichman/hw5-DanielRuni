@@ -145,6 +145,7 @@ public class Scrabble {
 		////testCreateHands();  
 		////testPlayHands();
 		////playGame();
+		playGame();
 	}
 
 	public static void testBuildingTheDictionary() {
