@@ -145,7 +145,6 @@ public class MyString {
                     }
                 }
             }
-            System.out.println("in method: " + str1);
         return str1;
     }
 
