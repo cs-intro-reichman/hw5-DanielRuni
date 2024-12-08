@@ -9,26 +9,6 @@ public class MyString {
         System.out.println(countChar(hello, 'z'));
         System.out.println(spacedString(hello));
         //// Put your other tests here.
-        System.out.println("testing subsetOf:");
-        System.out.println(subsetOf("sap", "space")); // true
-        System.out.println(subsetOf("spa", "space")); // true
-        System.out.println(subsetOf("pass", "space")); // false
-        System.out.println(subsetOf("c", "space")); // true
-        System.out.println(subsetOf("", "anything")); // true
-        System.out.println("testing spacedString:");
-        System.out.println(spacedString("silent"));
-        System.out.println(spacedString("a"));
-        System.out.println(spacedString(""));
-        System.out.println(spacedString("hi"));
-        System.out.println("testing randomStringOfLetters: ");
-        System.out.println(randomStringOfLetters(3));
-        System.out.println(randomStringOfLetters(4));
-        System.out.println(randomStringOfLetters(0));
-        System.out.println("testing remove:");
-        System.out.println(remove("committee", "meet")); // comit
-        System.out.println(remove("abc", "abc"));
-        System.out.println(remove("abc", "b")); // ac
-        System.out.println(remove("hello", "")); // hello
     }
 
     /**
