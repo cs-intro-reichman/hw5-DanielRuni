@@ -89,6 +89,7 @@ public class Scrabble {
     // 3. The user is prompted to enter another word, or '.' to end the hand. 
 	public static void playHand(String hand) {
 		int score = 0;
+		int numOfWords = 1;
 		// Declares the variable in to refer to an object of type In, and initializes it to represent
 		// the stream of characters coming from the keyboard. Used for reading the user's inputs.   
 		In in = new In();
@@ -105,8 +106,9 @@ public class Scrabble {
 				System.out.println("Invalid word. Try again.");
 			} else if (isWordInDictionary(input)) {
 				score += wordScore(input);
-				System.out.println(input + " earned " + wordScore(input) + " points. Score: " + score + " points. \n");
+				System.out.println(numOfWords + " \'" + input + "\' -> score: " + wordScore(input) + "\n");
 				hand = MyString.remove(hand, input); 
+				numOfWords ++ ;
 			}
 		}
 		if (hand.length() == 0) {
