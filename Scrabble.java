@@ -90,7 +90,7 @@ public class Scrabble {
 	public static void playHand(String hand) {
 		int n = hand.length();
 		int score = 0;
-		int wordsMum = 1;
+		int wordsNum = 1;
 		// Declares the variable in to refer to an object of type In, and initializes it to represent
 		// the stream of characters coming from the keyboard. Used for reading the user's inputs.   
 		In in = new In();
@@ -104,7 +104,9 @@ public class Scrabble {
 			if (input.equals(".")) break;
 			if (isWordInDictionary(input)) {
 				score += wordScore(input);
-				System.out.println(wordsMum + ". \'" + input + "\' -> score: " + wordScore(input));
+				System.out.println(wordsNum + ". \'" + input + "\' -> score: " + wordScore(input));
+				wordsNum ++ ;
+				hand = MyString.remove(hand, input);
 			}
 		}
 		if (hand.length() == 0) {
