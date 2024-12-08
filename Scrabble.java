@@ -69,6 +69,7 @@ public class Scrabble {
 		for (int i=0; i<word.length(); i++) {
 			score += SCRABBLE_LETTER_VALUES[(word.charAt(i)-97)];
 		}
+		score *= word.length();
 		return score;
 	}
 
