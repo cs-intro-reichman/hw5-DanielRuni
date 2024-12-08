@@ -109,6 +109,8 @@ public class Scrabble {
 				System.out.println(numOfWords + ". \'" + input + "\' -> score: " + wordScore(input) + "\n");
 				hand = MyString.remove(hand, input); 
 				numOfWords ++ ;
+			} else {
+				System.out.println("No such word in the dictionary. Try again.");
 			}
 		}
 		if (hand.length() == 0) {
