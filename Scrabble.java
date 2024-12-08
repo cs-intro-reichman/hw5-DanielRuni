@@ -101,7 +101,7 @@ public class Scrabble {
 			// end-of-line characters.
 			String input = in.readString();
 			if (isWordInDictionary(input)) {
-				score = wordScore(input);
+				System.out.println(input + " -> score: " + wordScore(input));
 			}
 			break;
 		}
