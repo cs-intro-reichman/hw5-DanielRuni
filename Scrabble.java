@@ -103,10 +103,10 @@ public class Scrabble {
 			if (input.equals(".")) {
 				break;
 			} else if (!MyString.subsetOf(input, hand)) {
-				System.out.println("Invalid word. Try again");
+				System.out.println("Invalid word. Try again.");
 			} else if (isWordInDictionary(input)) {
 				score += wordScore(input);
-				System.out.println(input + " earned " + wordScore(input) + " points. Score: " + score + " points.\n");
+				System.out.println(input + " earned " + wordScore(input) + " points. Score: " + score + " points\n");
 				hand = MyString.remove(hand, input); 
 				numOfWords ++ ;
 			} else {
